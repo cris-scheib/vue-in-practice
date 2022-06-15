@@ -1,17 +1,19 @@
 import { createWebHistory, createRouter } from "vue-router";
-import HelloWorld from '@/components/HelloWorld.vue'
-import About from '@/components/About.vue'
+import HomePage from '@/components/pages/HomePage.vue'
+import BindingPage from '@/components/pages/BindingPage.vue'
+
+require('@/assets/css/custom.css');
 
 const routes = [
   {
     path: "/",
-    name: "HelloWorld",
-    component: HelloWorld,
+    name: "Home",
+    component: HomePage,
   },
   {
-    path: "/about",
-    name: "About",
-    component: About,
+    path: "/binding",
+    name: "Binding",
+    component: BindingPage,
   },
 ];
 
