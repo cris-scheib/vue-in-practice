@@ -12,6 +12,9 @@
         <li>
           <router-link to="/binding">Bindings</router-link>
         </li>
+        <li>
+          <router-link to="/slots">Slots</router-link>
+        </li>
       </ul>
     </main>
     <footer class="center">

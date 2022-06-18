@@ -26,12 +26,10 @@
           </div>
         </div>
       </div>
-      <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="liveToast" :class="{ 'show': showToast }" class="toast" role="alert">
-          <div class="toast-header">
-            <strong class="me-auto">Não era para clicar ai</strong>
-            <button type="button" class="btn-close" @click="this.showToast = false"></button>
-          </div>
+      <div class="position-fixed bottom-0 end-0 p-3">
+        <div :class="{ 'show': showToast }" class="toast" role="alert">
+          <strong class="me-auto">Não era para clicar ai</strong>
+          <button type="button" class="btn-close" @click="this.showToast = false"></button>
         </div>
       </div>
       <div class="row">
@@ -76,6 +74,7 @@
 
 <script>
 export default {
+  name: "BindingPage",
   data() {
     return {
       text: "Let's Rock",
@@ -121,7 +120,10 @@ export default {
 .form-check-label {
   padding-left: .3em;
 }
-
+.toast{
+  display: flex;
+  padding: .5em;
+}
 .multi .form-check-label {
   margin-right: 1em;
 }
