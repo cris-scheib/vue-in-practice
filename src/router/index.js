@@ -1,7 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
-import HomePage from '@/components/pages/HomePage.vue'
-import SlotPage from '@/components/pages/SlotPage.vue'
-import BindingPage from '@/components/pages/BindingPage.vue'
+import HomePage from '@/components/home/HomePage.vue'
+import SlotPage from '@/components/slot/SlotPage.vue'
+import BindingPage from '@/components/binding/BindingPage.vue'
+import PropsPage from '@/components/props/PropsPage.vue'
 
 require('@/assets/css/custom.css');
 
@@ -20,6 +21,11 @@ const routes = [
     path: "/slot",
     name: "Slot",
     component: SlotPage,
+  },
+  {
+    path: "/props",
+    name: "Props",
+    component: PropsPage,
   },
 ];
 

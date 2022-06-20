@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Layout from '../layout/LayoutComponent.vue';
-import CoffeeAnimation from '../partials/CoffeeAnimation.vue';
+import Layout from './layout/LayoutComponent.vue';
+import CoffeeAnimation from './partials/CoffeeAnimation.vue';
 export default {
   components: { Layout, CoffeeAnimation },
   name: "SlotPage",
