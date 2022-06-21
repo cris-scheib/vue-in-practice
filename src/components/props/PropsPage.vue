@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       colors: [
-        '#647eff', '#42d392', '#42b883'
+        '#647eff', '#42d392', '#227b77', '#51acc4'
       ]
     };
   },
