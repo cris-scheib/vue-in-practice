@@ -1,4 +1,5 @@
 <template>
+
   <div class="props">
     <div class="container pb-5">
       <customizer-card v-model:colors="colors" />

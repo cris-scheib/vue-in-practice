@@ -7,11 +7,12 @@
                     {{ color }}
                 </p>
             </div>
+            <input type="color" id="new-color" @change="addColor()" class="hide" v-model="newColor">
             <label for="new-color" title="Adicionar cor">
                 <div class="card-color white">
-                    <input type="color" id="new-color" @change="addColor()" class="hide" v-model="newColor">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                     </svg>
                 </div>
             </label>
@@ -57,7 +58,6 @@ export default {
 .card-color.white {
     border: 2px solid white;
     padding: 0.65em 2em;
-    position: relative;
 }
 
 .card-color p {
@@ -66,14 +66,13 @@ export default {
 }
 
 .card-color.white svg {
-    height: 2em;
-    position: absolute;
-    top: 20%;
-    left: 36%;
+    height: calc(2em - 2px);
     color: white;
 }
 
 input.hide {
     visibility: hidden;
+    width: 0;
+
 }
 </style>

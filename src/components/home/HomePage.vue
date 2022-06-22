@@ -13,7 +13,7 @@
           <router-link to="/binding">Bindings</router-link>
         </li>
         <li>
-          <router-link to="/slot">Slots</router-link>
+          <router-link to="/slot/coffee">Slots</router-link>
         </li>
         <li>
           <router-link to="/props">Props</router-link>

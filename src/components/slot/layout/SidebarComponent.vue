@@ -2,9 +2,10 @@
     <div class="sidebar">
         <div class="sidebar-content">
             <nav class="nav flex-column">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Dashboard</a>
-                <a class="nav-link" href="#">Reports</a>
+                <router-link class="nav-link" to="/">Home</router-link>
+                <router-link class="nav-link" to="/slot/coffee">Meu café</router-link>
+                <router-link class="nav-link" to="/slot/desk">Minha mesa</router-link>
+                <router-link class="nav-link" to="/props">Props</router-link>
             </nav>
         </div>
     </div>
@@ -23,13 +24,16 @@ export default {
     background: linear-gradient(315deg, #213547 25%, #42b983);
 }
 
-.nav-link, .nav-link:hover {
+.nav-link,
+.nav-link:hover {
     color: white;
     padding: 1rem 1rem;
 }
-.nav-link.active{
+
+.nav-link.active {
     font-weight: bold;
 }
+
 .title {
     color: white;
     padding: 0.5em;
