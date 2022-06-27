@@ -1,4 +1,7 @@
-Vue na prática
+
+<h1 align="center">
+ Vue na prática
+</h1>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/cris-scheib/vue-in-practice/main/public/Vue.js.gif">
