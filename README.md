@@ -3,7 +3,7 @@
  Vue na prática
 </h1>
 
-<p align="center">
+<p align="center" style="padding: 0 6em;">
   <img src="https://raw.githubusercontent.com/cris-scheib/vue-in-practice/main/public/Vue.js.gif">
 </p>
 
